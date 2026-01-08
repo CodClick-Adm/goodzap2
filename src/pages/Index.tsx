@@ -22,7 +22,9 @@ const Header = () => (
         <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">Preços</a>
         <a href="#faq" className="text-muted-foreground hover:text-foreground transition-colors">FAQ</a>
       </nav>
-      <Button variant="hero">Começar Agora</Button>
+      <Button variant="hero" asChild>
+        <a href="https://wa.me/5511930047549?text=Quero%20mais%20informa%C3%A7%C3%B5es">Começar Agora</a>
+      </Button>
     </div>
   </motion.header>
 );
@@ -370,8 +372,9 @@ const PricingSection = () => (
             <Button
               variant={plan.popular ? "hero" : "outline"}
               className="w-full"
+              asChild
             >
-              Começar Agora
+              <a href="https://wa.me/5511930047549?text=Quero%20mais%20informa%C3%A7%C3%B5es">Começar Agora</a>
             </Button>
           </motion.div>
         ))}
@@ -454,9 +457,11 @@ const CTASection = () => (
         <p className="text-xl text-muted-foreground mb-10">
           Junte-se a mais de 10.000 empresas que já transformaram seu WhatsApp em uma máquina de vendas.
         </p>
-        <Button variant="cta">
-          <MessageCircle className="w-6 h-6 mr-2" />
-          Começar Teste Grátis de 7 Dias
+        <Button variant="cta" asChild>
+          <a href="https://wa.me/5511930047549?text=Quero%20mais%20informa%C3%A7%C3%B5es" className="inline-flex items-center">
+            <MessageCircle className="w-6 h-6 mr-2" />
+            Começar Teste Grátis de 7 Dias
+          </a>
         </Button>
         <p className="text-sm text-muted-foreground mt-4">
           Sem cartão de crédito • Cancele a qualquer momento
