@@ -95,9 +95,9 @@ const HeroSection = () => (
           className="grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { value: "10K+", label: "Empresas Ativas" },
-            { value: "50M+", label: "Mensagens/Mês" },
-            { value: "300%", label: "Aumento em Vendas" },
+            { value: "10+", label: "Tipos de Agentes" },
+            { value: "25+", label: "Segmentos Atendidos" },
+            { value: "45%", label: "Aumento em Vendas" },
             { value: "24/7", label: "Atendimento" },
           ].map((stat, index) => (
             <div key={index} className="glass-card rounded-2xl p-6">
