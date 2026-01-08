@@ -147,6 +147,16 @@ const features = [
     title: "Informações Personalizadas",
     description: "Fornece todas as informações necessárias ao cliente, como cardápio, preços, horário de atendimento, promoções, endereço e muito mais",
   },
+  {
+    icon: MessageCircle,
+    title: "Profissional de Vendas",
+    description: "Excepcional para restaurantes delivery. Atende o cliente, tira pedidos, calcula frete, oferece produtos extras aumentando o ticket médio",
+  },
+  {
+    icon: MessageCircle,
+    title: "Customização",
+    description: "Painel de controle com diversas configurações - Tempo antes do atendimento pelo agente, numeros especiais (que não devem ser atendidos pelo agente, área de entrega, valor do frete por Km ou por CEP, mensagem de saudação personalizada...etc",
+  },
 ];
 
 const FeaturesSection = () => (
