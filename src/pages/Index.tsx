@@ -139,8 +139,8 @@ const features = [
   },
   {
     icon: MessageCircle,
-    title: "Multi-Atendentes",
-    description: "Conecte múltiplos atendentes em um único número e gerencie tudo de forma centralizada.",
+    title: "Recuperação de clientes",
+    description: "Envia mensagens para recuperação de cliente (baseado na data da última compra)",
   },
 ];
 
