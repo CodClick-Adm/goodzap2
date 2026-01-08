@@ -83,7 +83,7 @@ const HeroSection = () => (
             Testar Grátis por 7 Dias
           </Button>
           <Button variant="heroOutline" size="xl">
-            Ver Demonstração
+            <a href="https://wa.me/5511959061727?text=Quero%20mais%20informa%C3%A7%C3%B5es">Ver Demonstração</a>
           </Button>
         </motion.div>
 
