@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Bot, Zap, Clock, Users, Shield, Info, Cog } from "lucide-react";
+import { MessageCircle, Bot, Zap, Clock, Users, Shield, Info, Cog, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => (
@@ -148,7 +148,7 @@ const features = [
     description: "Fornece todas as informações necessárias ao cliente, como cardápio, preços, horário de atendimento, promoções, endereço e muito mais",
   },
   {
-    icon: MessageCircle,
+    icon: Briefcase,
     title: "Profissional de Vendas",
     description: "Excepcional para restaurantes delivery. Atende o cliente, tira pedidos, calcula frete, oferece produtos extras aumentando o ticket médio",
   },
