@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle, Bot, Zap, Calendar, UserCheck, ShieldCheck, Info, Settings, TrendingUp, Users, DollarSign, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoGoodzap from "@/assets/logo-goodzap.png";
 
 const Header = () => (
   <motion.header
@@ -11,10 +12,7 @@ const Header = () => (
   >
     <div className="container mx-auto px-4 py-4 flex items-center justify-between">
       <div className="flex items-center gap-2">
-        <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center pulse-glow">
-          <MessageCircle className="w-6 h-6 text-primary-foreground" />
-        </div>
-        <span className="font-display text-2xl font-bold">GoodZap</span>
+        <img src={logoGoodzap} alt="GoodZap Logo" className="h-10 w-auto" />
       </div>
       <nav className="hidden md:flex items-center gap-8">
         <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Recursos</a>
