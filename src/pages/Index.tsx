@@ -312,7 +312,7 @@ const plans = [
     name: "Professional",
     price: "297",
     description: "Para empresas em crescimento",
-    features: ["Tudo do Starter", "Atua como vendedor", "Tira Pedidos", "Envia *Feliz Aniversário* com promoções automaticamente, "Recupera clientes que não compram faz algum tempo", "Faz Reservas"],
+    features: ["Tudo do Starter", "Atua como vendedor", "Tira Pedidos", "Envia *Feliz Aniversário* com promoções automaticamente", "Recupera clientes que não compram faz algum tempo", "Faz Reservas"],
     popular: true,
   },
   {
