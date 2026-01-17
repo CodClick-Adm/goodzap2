@@ -305,7 +305,7 @@ const plans = [
     name: "Starter",
     price: "97",
     description: "Ideal para pequenas empresas",
-    features: ["1.000 mensagens/mês", "1 atendente", "Respostas automáticas", "Suporte por email"],
+    features: ["Atendimento Personalizado", "Fornece informações sobre a empresa, como horarios de atendimento, informações sobre produtos, promoções,e muito mais", "Transfere para atendente humano"],
     popular: false,
   },
   {
