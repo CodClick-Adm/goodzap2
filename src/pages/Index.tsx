@@ -319,7 +319,7 @@ const plans = [
     name: "Enterprise",
     price: "697",
     description: "Para grandes operações",
-    features: ["Tudo do Professional", "Integrações com outras plataformas", "IA Avançada", "API completa", "Gerente dedicado"],
+    features: ["Tudo do Professional", "Qualificação de Leads", "Integrações com outras plataformas", "IA Avançada", "API completa", "Gerente dedicado"],
     popular: false,
   },
 ];
