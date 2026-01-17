@@ -22,7 +22,7 @@ export function ChatAssistant() {
   const [open, setOpen] = useState(false);
   const [showBubble, setShowBubble] = useState(true);
   const [messages, setMessages] = useState<Message[]>([
-    { role: "assistant", content: "Olá ! Bem vindo à CodClick Automação 🙂! Me pergunte o que quiser" },
+    { role: "assistant", content: "Olá ! Bem vindo à CodClick Automação! Me pergunte o que quiser 🙂! " },
   ]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
