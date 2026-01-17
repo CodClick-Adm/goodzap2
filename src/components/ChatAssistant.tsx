@@ -107,8 +107,8 @@ export function ChatAssistant() {
       {showBubble && !open && (
         <div className="fixed bottom-24 right-6 z-50 animate-fade-in">
           <div className="bg-orange-500 text-white px-4 py-3 rounded-lg shadow-lg max-w-[200px] relative">
-            <p className="text-sm">Teste o</p>
-            <p className="text-sm">Atendente Inteligente CodClick</p>
+            <p className="text-sm">Teste o nosso</p>
+            <p className="text-sm">Atendente Inteligente</p>
             <p className="text-sm">Me envie uma mensagem</p>
             <div className="absolute -bottom-2 right-4 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-orange-500"></div>
           </div>
