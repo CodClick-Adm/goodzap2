@@ -20,6 +20,7 @@ const WEBHOOK_URL = "https://n8n-n8n-start.yh11mi.easypanel.host/webhook/chatass
 
 export function ChatAssistant() {
   const [open, setOpen] = useState(false);
+  const [showBubble, setShowBubble] = useState(true);
   const [messages, setMessages] = useState<Message[]>([
     { role: "assistant", content: "Olá ! Bem vindo à CodClick Automação 🙂! Me pergunte o que quiser" },
   ]);
@@ -27,6 +28,13 @@ export function ChatAssistant() {
   const [isLoading, setIsLoading] = useState(false);
   const [sessionId] = useState(() => uuidv4());
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowBubble(false);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -95,13 +103,24 @@ export function ChatAssistant() {
 
   return (
     <>
+      {/* Speech Bubble */}
+      {showBubble && !open && (
+        <div className="fixed bottom-24 right-6 z-50 animate-fade-in">
+          <div className="bg-orange-500 text-white px-4 py-3 rounded-lg shadow-lg max-w-[200px] relative">
+            <p className="text-sm font-medium">Teste o Atendente Inteligente</p>
+            <p className="text-sm">Me envie uma mensagem</p>
+            <div className="absolute -bottom-2 right-4 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-orange-500"></div>
+          </div>
+        </div>
+      )}
+
       {/* Floating Button */}
       <Button
         onClick={() => setOpen(true)}
         className="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-orange-500 hover:bg-orange-600 shadow-lg transition-all duration-300 hover:scale-110"
         size="icon"
       >
-        <Bot className="h-7 w-7 text-white" />
+        <Bot className="h-8 w-8 text-white" />
       </Button>
 
       {/* Chat Dialog */}
