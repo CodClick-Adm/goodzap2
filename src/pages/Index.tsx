@@ -329,7 +329,7 @@ const plans = [
   {
     name: "Enterprise",
     price: "697",
-    description: "Integração total, inteligência avançada e escala\n\nIdeal para empresas que já possuem sistemas próprios e precisam integrar tudo em um único fluxo inteligente no WhatsApp\n\nValor final do plano * SOB CONSULTA *",
+    description: "Integração total, inteligência avançada e escala\n\nIdeal para empresas que já possuem sistemas próprios e precisam integrar tudo em um único fluxo inteligente no WhatsApp\n\nValor final do plano\n* SOB CONSULTA *",
     features: [
       "Tudo do Professional",
       "Qualificação automática de leads",
