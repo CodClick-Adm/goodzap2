@@ -303,7 +303,7 @@ const BenefitsSection = () => (
 const plans = [
   {
     name: "Starter",
-    price: "97",
+    price: "147",
     description: "Ideal para pequenas empresas",
     features: ["Atendimento Personalizado", "Fornece informações sobre a empresa, como horários de atendimento, informações sobre produtos, promoções,e muito mais", "Transfere para atendente humano"],
     popular: false,
