@@ -316,7 +316,7 @@ const plans = [
   {
     name: "Professional",
     price: "297",
-    description: "Transforme o WhatsApp em um canal de vendas automático.",
+    description: "Transforme o WhatsApp em um canal de vendas automático\n\nIdeal para restaurantes delivery e empresas que vendem ou recebem pedidos pelo WhatsApp",
     features: [
       "Tudo do Starter",
       "Registro e envio de pedidos automaticamente",
@@ -329,7 +329,7 @@ const plans = [
   {
     name: "Enterprise",
     price: "fale conosco",
-    description: "Integração total, inteligência avançada e escala",
+    description: "Integração total, inteligência avançada e escala\n\nIdeal para empresas que já possuem sistemas próprios e precisam integrar tudo em um único fluxo inteligente no WhatsApp",
     features: [
       "Tudo do Professional",
       "Qualificação automática de leads",
