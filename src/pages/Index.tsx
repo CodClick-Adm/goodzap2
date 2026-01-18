@@ -328,7 +328,7 @@ const plans = [
   },
   {
     name: "Enterprise",
-    price: "fale conosco",
+    price: " Sob Consulta",
     description: "Integração total, inteligência avançada e escala\n\nIdeal para empresas que já possuem sistemas próprios e precisam integrar tudo em um único fluxo inteligente no WhatsApp",
     features: [
       "Tudo do Professional",
