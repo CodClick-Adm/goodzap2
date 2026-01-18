@@ -304,22 +304,22 @@ const plans = [
   {
     name: "Starter",
     price: "147",
-    description: "Ideal para pequenas empresas",
-    features: ["Atendimento Personalizado", "Fornece informações sobre a empresa, como horários de atendimento, informações sobre produtos, promoções,e muito mais", "Transfere para atendente humano"],
+    description: "Automatize respostas e ganhe tempo no WhatsApp\nIdeal para empresas que recebem muitas perguntas repetidas e precisam responder rápido, sem depender de um atendente o tempo todo",
+    features: ["Atendimento automatizado e personalizado", "Respostas instantâneas sobre horários, serviços, produtos e promoções", "Redução drástica de mensagens manuais", "Transferência inteligente para atendente humano quando necessário"],
     popular: false,
   },
   {
     name: "Professional",
     price: "297",
-    description: "Para empresas em crescimento",
-    features: ["Tudo do Starter", "Atua como vendedor", "Tira Pedidos", "Envia *Feliz Aniversário* com promoções automaticamente", "Recupera clientes que não compram faz algum tempo", "Faz Reservas"],
+    description: "Transforme o WhatsApp em um canal de vendas automático\nIdeal para restaurantes delivery e empresas que vendem ou recebem pedidos pelo WhatsApp",
+    features: ["Tudo do Starter", "Atendimento atuando como vendedor", "Registro e envio de pedidos automaticamente", "Recuperação de clientes inativos", "Mensagens automáticas de aniversário com promoções", "Agendamento e reservas sem esforço"],
     popular: true,
   },
   {
     name: "Enterprise",
     price: "697",
     description: "Para grandes operações",
-    features: ["Tudo do Professional", "Qualificação de Leads", "Integrações com outras plataformas", "IA Avançada", "API completa", "Gerente dedicado"],
+    features: ["Tudo do Professional", "Qualificação automática de leads", "Integração com CRM, ERP, estoque e sistemas internos", "IA avançada com operações personalizadas", "API completa para integrações sob medida", "Gerente dedicado para acompanhar sua operação"],
     popular: false,
   },
 ];
