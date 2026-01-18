@@ -485,7 +485,7 @@ const CTASection = () => (
           Pronto para <span className="text-gradient">revolucionar</span> seu atendimento?
         </h2>
         <p className="text-xl text-muted-foreground mb-10">
-          Junte-se a mais de 10.000 empresas que já transformaram seu WhatsApp em uma máquina de vendas.
+          Transforme o WhatsApp da sua empresa em uma máquina de vendas através da Inteligência Artificial
         </p>
         <Button variant="cta" asChild>
           <a href="https://wa.me/5511930047549?text=Quero%20mais%20informa%C3%A7%C3%B5es" className="inline-flex items-center">
