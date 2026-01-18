@@ -67,7 +67,7 @@ const HeroSection = () => (
           className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto"
         >
           Automatize atendimentos, qualifique leads e feche vendas 24/7 com inteligência artificial. 
-          Aumente suas conversões em até 300%.
+          Aumente suas conversões em mais de 45%.
         </motion.p>
         
         <motion.div
@@ -93,9 +93,9 @@ const HeroSection = () => (
           className="grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { value: "10+", label: "Tipos de Agentes" },
-            { value: "25+", label: "Segmentos Atendidos" },
-            { value: "45%", label: "Aumento em Vendas" },
+            { value: "10 +", label: "Tipos de Agentes" },
+            { value: "25 +", label: "Segmentos Atendidos" },
+            { value: "45% +", label: "Aumento em Vendas" },
             { value: "24/7", label: "Atendimento" },
           ].map((stat, index) => (
             <div key={index} className="glass-card rounded-2xl p-6">
