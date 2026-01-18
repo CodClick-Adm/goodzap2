@@ -304,7 +304,7 @@ const plans = [
 {
     name: "Starter",
     price: "147",
-    description: "Automatize respostas e ganhe tempo no WhatsApp.",
+    description: "Automatize respostas e ganhe tempo no WhatsApp\n\nIdeal para empresas que recebem muitas perguntas repetidas e precisam responder rápido, sem depender de um atendente o tempo todo.",
     features: [
       "Atendimento automatizado e personalizado",
       "Respostas instantâneas sobre horários, serviços, produtos e promoções",
