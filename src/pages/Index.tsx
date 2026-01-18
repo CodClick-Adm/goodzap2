@@ -39,7 +39,7 @@ const Header = () => (
 
 /* ================= HERO ================= */
 const HeroSection = () => (
-  <section className="min-h-screen pt-32 pb-20 bg-hero-gradient">
+<section className="min-h-[calc(100vh-80px)] pt-24 pb-16 bg-hero-gradient">
     <div className="container mx-auto px-4 text-center max-w-4xl">
       <motion.h1 className="text-5xl md:text-7xl font-bold mb-6">
         Transforme seu <span className="text-gradient">WhatsApp</span> em uma Máquina de Vendas
