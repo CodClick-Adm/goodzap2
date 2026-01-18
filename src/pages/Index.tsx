@@ -381,7 +381,7 @@ const PricingSection = () => (
             )}
             
             <h3 className="font-display text-2xl font-bold mb-2">{plan.name}</h3>
-            <p className="text-muted-foreground mb-6">{plan.description}</p>
+            <p className="text-muted-foreground mb-6 whitespace-pre-line">{plan.description}</p>
             
             <div className="mb-8">
               <span className="text-5xl font-display font-bold">R${plan.price}</span>
