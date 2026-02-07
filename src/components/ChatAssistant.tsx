@@ -27,7 +27,8 @@ export function ChatAssistant() {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [sessionId] = useState(() => uuidv4());
-  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const lastAssistantRef = useRef<HTMLDivElement>(null);
+  const [lastAssistantIndex, setLastAssistantIndex] = useState(0);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -37,8 +38,18 @@ export function ChatAssistant() {
   }, []);
 
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+    // Find the last assistant message index
+    const lastIndex = messages.reduce((acc, msg, idx) => 
+      msg.role === "assistant" ? idx : acc, -1);
+    
+    if (lastIndex > lastAssistantIndex) {
+      setLastAssistantIndex(lastIndex);
+      // Small delay to ensure DOM is updated
+      setTimeout(() => {
+        lastAssistantRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 100);
+    }
+  }, [messages, lastAssistantIndex]);
 
   const sendMessage = async () => {
     if (!input.trim() || isLoading) return;
@@ -135,22 +146,28 @@ export function ChatAssistant() {
           {/* Messages */}
           <ScrollArea className="flex-1 p-4">
             <div className="space-y-4">
-              {messages.map((msg, index) => (
-                <div
-                  key={index}
-                  className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
-                >
+              {messages.map((msg, index) => {
+                const isLastAssistant = msg.role === "assistant" && 
+                  index === messages.reduce((acc, m, i) => m.role === "assistant" ? i : acc, -1);
+                
+                return (
                   <div
-                    className={`max-w-[80%] rounded-lg px-3 py-2 text-sm whitespace-pre-line ${
-                      msg.role === "user"
-                        ? "bg-orange-500 text-white"
-                        : "bg-muted text-foreground"
-                    }`}
+                    key={index}
+                    ref={isLastAssistant ? lastAssistantRef : null}
+                    className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
                   >
-                    {msg.content}
+                    <div
+                      className={`max-w-[80%] rounded-lg px-3 py-2 text-sm whitespace-pre-line ${
+                        msg.role === "user"
+                          ? "bg-orange-500 text-white"
+                          : "bg-muted text-foreground"
+                      }`}
+                    >
+                      {msg.content}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
               {isLoading && (
                 <div className="flex justify-start">
                   <div className="bg-muted rounded-lg px-3 py-2 text-sm">
@@ -158,7 +175,6 @@ export function ChatAssistant() {
                   </div>
                 </div>
               )}
-              <div ref={messagesEndRef} />
             </div>
           </ScrollArea>
 
