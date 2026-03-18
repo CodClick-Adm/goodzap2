@@ -304,6 +304,7 @@ const plans = [
 {
     name: "Starter",
     price: "147",
+    originalPrice: null,
     description: "Automatize respostas e ganhe tempo no WhatsApp\n\nIdeal para empresas que recebem muitas perguntas repetidas e precisam responder rápido, sem depender de um atendente o tempo todo.",
     features: [
       "Atendimento automatizado e personalizado",
@@ -316,6 +317,7 @@ const plans = [
   {
     name: "Professional",
     price: "297",
+    originalPrice: "497",
     description: "Transforme o WhatsApp em um canal de vendas automático\n\nIdeal para restaurantes delivery e empresas que vendem ou recebem pedidos pelo WhatsApp",
     features: [
       "Tudo do Starter",
@@ -329,6 +331,7 @@ const plans = [
   {
     name: "Enterprise",
     price: "697",
+    originalPrice: null,
     description: "Integração total, inteligência avançada e escala\n\nIdeal para empresas que já possuem sistemas próprios e precisam integrar tudo em um único fluxo inteligente no WhatsApp\n\nValor final do plano\n* SOB CONSULTA *",
     features: [
       "Tudo do Professional",
