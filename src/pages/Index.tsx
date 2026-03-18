@@ -303,7 +303,7 @@ const BenefitsSection = () => (
 const plans = [
 {
     name: "Starter",
-    price: "147",
+    price: "247",
     originalPrice: null,
     description: "Automatize respostas e ganhe tempo no WhatsApp\n\nIdeal para empresas que recebem muitas perguntas repetidas e precisam responder rápido, sem depender de um atendente o tempo todo.",
     features: [
