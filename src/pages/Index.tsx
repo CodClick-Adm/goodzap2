@@ -387,6 +387,9 @@ const PricingSection = () => (
             <p className="text-muted-foreground mb-6 whitespace-pre-line">{plan.description}</p>
             
             <div className="mb-8">
+              {plan.originalPrice && (
+                <span className="text-2xl font-display text-muted-foreground line-through mr-3">R${plan.originalPrice}</span>
+              )}
               <span className="text-5xl font-display font-bold">R${plan.price}</span>
               <span className="text-muted-foreground">/mês</span>
             </div>
